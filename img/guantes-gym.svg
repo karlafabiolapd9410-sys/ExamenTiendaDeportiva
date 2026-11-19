@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="guantes-gym">
+<defs><radialGradient id="g" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#eef1f5"/><stop offset="1" stop-color="#d5dbe6"/></radialGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-opacity=".28"/></filter></defs>
+<rect width="600" height="600" fill="url(#g)"/><g filter="url(#sh)"><g transform="translate(210 0) scale(1 1)"><path d="M-60 440 C-90 380 -100 300 -80 240 L-60 170 C-55 150 -30 150 -28 170 L-25 230 L-20 140 C-18 120 8 120 10 140 L12 220 L20 150 C22 130 48 132 48 152 L45 230 L60 190 C68 172 92 180 86 200 L70 300 C85 380 70 420 60 440Z" fill="#20242e"/>
+<path d="M-60 400 H60" stroke="#ff5a1f" stroke-width="12"/><rect x="-62" y="410" width="124" height="40" rx="8" fill="#0f1218"/></g><g transform="translate(400 0) scale(-1 1)"><path d="M-60 440 C-90 380 -100 300 -80 240 L-60 170 C-55 150 -30 150 -28 170 L-25 230 L-20 140 C-18 120 8 120 10 140 L12 220 L20 150 C22 130 48 132 48 152 L45 230 L60 190 C68 172 92 180 86 200 L70 300 C85 380 70 420 60 440Z" fill="#20242e"/>
+<path d="M-60 400 H60" stroke="#ff5a1f" stroke-width="12"/><rect x="-62" y="410" width="124" height="40" rx="8" fill="#0f1218"/></g></g></svg>

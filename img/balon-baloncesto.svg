@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="balon-baloncesto">
+<defs><radialGradient id="g" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#fff3e6"/><stop offset="1" stop-color="#f2c9a0"/></radialGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-opacity=".28"/></filter></defs>
+<rect width="600" height="600" fill="url(#g)"/><g filter="url(#sh)"><circle cx="300" cy="300" r="190" fill="#e2701f"/><g fill="none" stroke="#2a1608" stroke-width="7">
+<path d="M110 300 H490"/><path d="M300 110 V490"/><path d="M165 165 C240 235 240 365 165 435"/><path d="M435 165 C360 235 360 365 435 435"/></g>
+<circle cx="300" cy="300" r="190" fill="none" stroke="#2a1608" stroke-width="7"/></g></svg>
