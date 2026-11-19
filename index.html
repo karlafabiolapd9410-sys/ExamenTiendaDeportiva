@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="oscuro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProArena Sport | Tienda deportiva en línea</title>
+  <!-- TIPO 1 de hoja de estilos: EXTERNA (archivo styles.css) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- TIPO 2 de hoja de estilos: INTERNA (etiqueta style dentro del head) -->
+  <style>
+    .nota-interna { font-size: .85rem; opacity: .8; }
+  </style>
+</head>
+<body>
+
+  <!-- ===== ENCABEZADO: logo + menú de navegación ===== -->
+  <header class="encabezado">
+    <a class="marca" href="#inicio" aria-label="ProArena Sport, ir al inicio">
+      <img src="img/logo.svg" alt="Logo de ProArena Sport" width="48" height="48">
+      <span>ProArena <b>Sport</b></span>
+    </a>
+
+    <button class="btn-hamburguesa" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="menu" id="menu" aria-label="Navegación principal">
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <button class="btn-icono" id="btnTema" title="Cambiar entre modo oscuro y claro" aria-label="Cambiar tema">🌓</button>
+      <select id="selMoneda" aria-label="Seleccionar moneda">
+        <option value="CRC">CRC ₡</option>
+        <option value="USD">USD $</option>
+      </select>
+      <button class="btn-icono" id="btnAbrirCarrito" title="Ver carrito" aria-label="Abrir carrito">🛒</button>
+      <span class="contador-carrito" id="contadorCarrito">Carrito: 0</span>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- ===== PORTADA ===== -->
+    <section class="portada">
+      <p class="portada-sub">Envíos a todo Costa Rica</p>
+      <h1>Equípate para tu próximo partido</h1>
+      <a class="btn btn-principal" href="#productos">Ver productos</a>
+    </section>
+
+    <!-- ===== TEXTO DE PRESENTACIÓN ===== -->
+    <section class="presentacion" id="nosotros">
+      <p><strong>Bienvenido(a):</strong> Somos ProArena Sport, tu tienda deportiva en línea con envío a todo Costa Rica.
+        Ofrecemos balones, calzado, ropa deportiva y accesorios con marcas originales y precios accesibles.
+        Compra rápido, seguro y sin filas. 🏃‍♂️💨</p>
+    </section>
+
+    <!-- ===== FILTROS (buscar, categoría, ordenar, precio máximo) ===== -->
+    <section class="filtros" aria-label="Filtros de productos">
+      <input type="search" id="buscador" placeholder="Buscar (ej. balón, guantes)" aria-label="Buscar producto">
+      <select id="selCategoria" aria-label="Filtrar por categoría"><option value="todas">Todas</option></select>
+      <select id="selOrden" aria-label="Ordenar productos">
+        <option value="ninguno">Ordenar</option>
+        <option value="menor">Precio: menor a mayor</option>
+        <option value="mayor">Precio: mayor a menor</option>
+        <option value="nombre">Nombre (A-Z)</option>
+      </select>
+      <label class="rango">
+        <input type="range" id="rangoPrecio" aria-label="Precio máximo">
+        <span id="textoRango">Hasta: ₡60 000</span>
+      </label>
+    </section>
+
+    <!-- ===== CATÁLOGO (se llena con JavaScript) ===== -->
+    <section class="catalogo" id="productos" aria-label="Catálogo de productos">
+      <h2>Productos deportivos</h2>
+      <div class="grid-productos" id="gridProductos"></div>
+      <p class="vacio" id="msgSinResultados" hidden>No hay productos con esos filtros. Prueba otra búsqueda.</p>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <!-- TIPO 3 de hoja de estilos: EN LÍNEA (atributo style) -->
+    <p style="font-weight:700;">© 2026 ProArena Sport</p>
+    <p class="nota-interna">Tienda deportiva en línea · Costa Rica · Proyecto de Programación Web</p>
+  </footer>
+
+  <!-- ===== PANEL DEL CARRITO ===== -->
+  <div class="fondo-oscuro" id="fondoCarrito" hidden></div>
+  <aside class="panel-carrito" id="panelCarrito" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="panel-cab">
+      <img src="img/logo.svg" alt="" width="36" height="36">
+      <h2>Carrito</h2>
+      <button class="btn-icono" id="btnCerrarCarrito" aria-label="Cerrar carrito">✕</button>
+    </div>
+    <div class="panel-lista" id="listaCarrito"></div>
+    <div class="panel-pie">
+      <p class="total" id="totalCarrito">Total: ₡0</p>
+      <button class="btn btn-peligro" id="btnVaciar">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
